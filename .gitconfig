@@ -1,0 +1,22 @@
+[remote "lm-sys"]
+    url = https://github.com/lm-sys/FastChat.git
+    fetch = +refs/heads/*:refs/remotes/lm-sys/*
+[remote "origin"]
+    url = git@github.com:huangyingw/lm-sys_FastChat.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[push]
+    remote = origin
+[gsync]
+    remote = lm-sys
+    target = lm-sys/main
+[branch "dev"]
+    remote = origin
+    merge = refs/heads/dev
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[gdio]
+    ignore = *.gdio.diff
+[deploy]
+	host = localhost
+	path = ~/myproject/git/AI/lm-sys/FastChat
