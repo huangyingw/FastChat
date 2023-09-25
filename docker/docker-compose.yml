@@ -24,7 +24,7 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    entrypoint: ["python3.9", "-m", "fastchat.serve.model_worker", "--model-names", "${FASTCHAT_WORKER_MODEL_NAMES:-vicuna-7b-v1.3}", "--model-path", "${FASTCHAT_WORKER_MODEL_PATH:-lmsys/vicuna-7b-v1.3}", "--worker-address", "http://fastchat-model-worker:21002", "--controller-address", "http://fastchat-controller:21001", "--host", "0.0.0.0", "--port", "21002"]
+    entrypoint: ["python3.9", "-m", "fastchat.serve.model_worker", "--model-names", "Phind-CodeLlama-34B-v2", "--model-path", "Phind/Phind-CodeLlama-34B-v2", "--worker-address", "http://fastchat-model-worker:21002", "--controller-address", "http://fastchat-controller:21001", "--host", "0.0.0.0", "--port", "21002"]
 
   fastchat-api-server:
     build:
