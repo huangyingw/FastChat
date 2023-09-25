@@ -2,7 +2,7 @@
     url = https://github.com/lm-sys/FastChat.git
     fetch = +refs/heads/*:refs/remotes/lm-sys/*
 [remote "origin"]
-    url = git@github.com:huangyingw/lm-sys_FastChat.git
+    url = git@github.com:huangyingw/FastChat.git
     fetch = +refs/heads/*:refs/remotes/origin/*
 [push]
     remote = origin
