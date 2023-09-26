@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - huggingface:/root/.cache/huggingface
+      - ./models/:/root/.cache/huggingface
     image: fastchat:latest
     deploy:
       resources:
